@@ -19,7 +19,7 @@ public class Player {
 		(new good(new pointValueStruct(0,0,moves))).start();
 		this.wait(0, 26000);
 		for (pointValueStruct pvs : pvsList)
-			if (pvs.Alpha + pvs.Beta > max.Alpha + max.Beta)
+			if (pvs.Alpha + pvs.Beta > max.Alpha + max.Beta) 
 				max = pvs;
 		return max.moves.get(moves.size());
 
